@@ -9,6 +9,10 @@
 	font-weight: 100;
 }
 
+.new_video:focus{
+	background-color: rgba(10,10,10,0.5);
+}
+
 .new_video:hover{
 	background-color: grey;
 	transition: 0.2s;
