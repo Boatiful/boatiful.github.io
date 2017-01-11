@@ -1,0 +1,35 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+#normal-nav {
+  display:flex;
+  justify-content: center;
+}
+
+.element-menu-normal {
+	color: black;
+	font-size: 1.2rem;
+}
+
+.side-nav a {
+	color: white;
+}
+.element-menu-mobile {
+	font-size: 1.2rem;
+}
+
+@font-face {
+    font-family: "galada";
+    src: url('css/Galada-Regular.ttf');
+}
+
+.brand-logo img{
+	height: 66px;
+}
+
+h1{
+	font-family: 'Nunito Sans', sans-serif;
+}
+

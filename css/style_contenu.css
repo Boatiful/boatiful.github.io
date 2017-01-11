@@ -1,0 +1,17 @@
+.bateau {
+	max-width: 100%;
+}
+
+.ancre {
+	padding-top: 3%;
+}
+
+span {
+	font-weight: bold;
+}
+
+.titre {
+	font-size: 1.5rem;
+	font-family: "galada";
+	margin: 15px 0;
+}

@@ -1,0 +1,160 @@
+.new_video{
+	position: fixed;
+	z-index: 999999;
+	bottom: 10px;
+	right: 10px;
+	background-color: rgba(10,10,10,0.5);
+	color : white;
+	font-family: "Roboto";
+	font-weight: 100;
+}
+
+.new_video:hover{
+	background-color: grey;
+	transition: 0.2s;
+	border : none;
+	box-shadow : 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+}
+
+
+
+#parallax{
+	background-image: url("../img/boat_parallax.jpg");
+
+    /* Set a specific height */
+    height: 100vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_parallax{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-size: 5rem;
+	font-family: "galada";
+	padding: 0.5rem 1.5rem 0 1.5rem;
+	border: 1px solid #EEE;
+	box-shadow: 0px 0px 10px black;
+	position:relative;
+    top: -100px;
+}
+
+a{
+	color: inherit;
+}
+
+@font-face {
+    font-family: "galada";
+    src: url('../font/Galada-Regular.ttf');
+}
+
+/*
+///
+///
+///				ABOUT
+///
+///
+*/
+
+.card-container{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+}
+
+.card-about{
+	width: 33.3%;
+	height : 200px;
+	margin: 0 1rem;
+
+	padding: 1.5rem;
+	transition: 0.2s;
+
+}
+
+.card-about:hover{
+	border : none;
+	box-shadow : 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3)
+}
+
+.card-container h2{
+	font-family: "galada";
+}
+
+.card-about .bubble-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.card-about .val_bubble{
+	margin: 0 0.5rem;
+	width: 7rem;
+	height: 7rem;
+	border-radius: 3.5rem;
+	text-align: center;
+	line-height: 7rem;
+}
+
+.card-about .val_bubble:hover{
+	box-shadow : 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+	transition: 0.2s;
+}
+
+.list-about ul li{
+	list-style: disc;
+}
+
+.list-about{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: -26px; 
+}
+
+
+
+@media (max-width: 1300px) {
+  .card-container{
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  }
+
+  .card-about{
+  	width: 40%;
+  	margin: 1rem 1rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .card-container{
+  	flex-direction: column;
+  }
+
+  .card-about{
+  	width: 50%;
+  	margin: 1rem 0rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .card-container{
+  	flex-direction: column;
+  }
+
+  .card-about{
+  	width: 80%;
+  	margin: 1rem 0rem;
+  }
+}
